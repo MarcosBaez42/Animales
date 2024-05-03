@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <title>Registros De Mascotas</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="styles.js"></script>
+
+    <div class="encabezado">
+        <h1 class="titulo">Veterinaria Vida Animal</h1>
+    </div>
+
+    <section class="filtro">
+        <label class="fil">FILTRAR POR</label>
+        <select id="tipoFiltro">
+            <option value="Todos">Todos</option>
+            <option value="Abierto">Abierto</option>
+            <option value="Cerrado">Cerrado</option>
+            <option value="Terminado">Terminado</option>
+        </select>
+        <button onclick="filtrar()" class="btnFiltro">Filtrar</button>
+    </section>
+
+    <div class="contenedor">
+        <div class="title">
+            REGISTRO DE MASCOTAS
+        </div>
+        <div class="formulario">
+            <div class="form">
+                <div class="inputfield">
+                    <label>NOMBRE DE LA MASCOTA</label>
+                    <input id="nombredelamascota" type="text" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>NOMBRE DEL PROPIETARIO</label>
+                    <input id="nombredelpropietario" type="text" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>TELEFONO</label>
+                    <input id="telefono" type="text" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>FECHA</label>
+                    <input id="fecha" type="date" class="input">
+                </div>
+                <div class="customselect">
+                    <label>TIPO DE MASCOTA</label>
+                    <select id="tipoMascota">
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Loro">Loro</option>
+                        <option value="Hamster">Hamster</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>HORA</label>
+                    <input id="hora" type="time" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>NUMERO DE DOCUMENTO</label>
+                    <input id="numeroDocumento" type="text" class="input">
+                </div>
+                <div class="inputfield">
+                    <label>ESTADO</label>
+                    <select id="estadoFiltro">
+                        <option value="Abierto">Abierto</option>
+                        <option value="Cerrado">Cerrado</option>
+                        <option value="Terminado">Terminado</option>
+                    </select>
+                </div>
+                <div class="boton">
+                    <button onclick="enviar()" class="btn">ENVIAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_resultado" id="containerResultado">
+        <!-- Aquí se mostrarán los registros -->
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+
+*{
+    margin: 0;
+}
+
+.encabezado{
+    background-image: url(./img/fondo\ veterinaria.jpg);
+    height: 800px;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    font-family: "League Spartan", sans-serif;
+    font-size: 90px;
+    background: linear-gradient(rgb(55, 165, 141) ,rgb(3, 3, 253));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: titulo 5s linear infinite;
+}
+
+@keyframes titulo{
+    0%{
+        filter: linear(0deg);
+    }
+
+    100%{
+        filter: linear(360deg);
+    }
+}
+
+.contenedor{
+    max-width: 950px;
+    height: 800px auto;
+    width: 100%;
+    background: #87d5f3;
+    margin: 50px auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+    padding: 40px;
+    border-radius: 1vh;
+    box-shadow: #bd8686;
+}
+
+.filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0 350px;
+}
+
+.formulario label{
+    display: flex;
+}
+
+.formulario input{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #8a6262;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.inputfield{
+    
+    margin-bottom: 25px;
+}
+
+.customselect{
+    margin-bottom: 20px;
+}
+
+.nombredelamascota{
+    margin-left: 10px;
+}
+
+
+.container_resultado {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se envuelvan a una nueva línea cuando no haya suficiente espacio */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+
+/* Estilos para cada contenedor de animal */
+.registro { 
+    width: 150px auto; /* Ajusta el ancho del contenedor según sea necesario */
+    margin: 10px;
+    padding: 10px;
+    background-color: #87d5f3;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro img {
+    display: grid;
+    width: 100% ; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.detalles {
+    text-align: center;
+    background-color: #ceecf3;
+    width: 300px auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btnFiltro {
+    margin-top: 5px;
+    background-color: #87d5f3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnEliminar{
+    width: 100% auto;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #14b8f8;
+}
+
+.btnEditar{
+    width: 100% auto;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #14b8f8; 
+}
